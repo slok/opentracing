@@ -1,18 +1,14 @@
-hash: a499cfed948d55084d4c2e6827b478bcf19fc1cb31ede74717dba805cef9d7e2
-updated: 2018-03-05T11:39:25.17841063+01:00
+hash: 378c22fd5fbd65c53c550bf5dd99b6dd59f9da2026969cd8fdb0e7d13688c9f2
+updated: 2018-05-27T11:57:12.242167283+02:00
 imports:
-- name: github.com/apache/thrift
-  version: b2a4d4ae21c789b689dd162deb819665567f481c
-  subpackages:
-  - lib/go/thrift
 - name: github.com/beorn7/perks
   version: 4c0e84591b9aa9e6dcfdf3e020114cd81f89d5f9
   subpackages:
   - quantile
 - name: github.com/codahale/hdrhistogram
-  version: f8ad88b59a584afeee9d334eff879b104439117b
+  version: 3a0bb77429bd3a61596f5e8a3172445844342120
 - name: github.com/gogo/protobuf
-  version: 2adc21fd136931e0388e278825291678e1d98309
+  version: 30cf7ac33676b5786e78c746683f0d4cd64fa75b
   subpackages:
   - proto
 - name: github.com/golang/protobuf
@@ -20,17 +16,19 @@ imports:
   subpackages:
   - proto
 - name: github.com/instana/golang-sensor
-  version: 83ecc62fa9d22235944d1f5cd3a00829c64d19d1
+  version: a5e9b88a08288f58657cec980f0148f0162c6a6e
 - name: github.com/looplab/fsm
-  version: bcc3636384ce80a109a6039432b30ff5b82476ee
+  version: f980bdb68a8962823200eafe6c0aa99e917be0d7
 - name: github.com/matttproud/golang_protobuf_extensions
   version: c12348ce28de40eed0136aa2b644d0ee0650e56c
   subpackages:
   - pbutil
 - name: github.com/opentracing/basictracer-go
-  version: 1b32af207119a14b1b231d451df3ed04a72efebf
+  version: 98b91394c2def4a44acff5e100538b4812f2f694
   subpackages:
   - wire
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
 - name: github.com/prometheus/client_golang
   version: c5b7fccd204277076155f10851dad72b76a49317
   subpackages:
@@ -50,14 +48,17 @@ imports:
   subpackages:
   - xfs
 - name: github.com/uber/jaeger-client-go
-  version: 3ac96c6e679cb60a74589b0d0aa7c70a906183f7
+  version: b043381d944715b469fd6b37addfd30145ca1758
   subpackages:
   - config
   - internal/baggage
   - internal/baggage/remote
   - internal/spanlog
+  - internal/throttler
+  - internal/throttler/remote
   - log
   - rpcmetrics
+  - thrift
   - thrift-gen/agent
   - thrift-gen/baggage
   - thrift-gen/jaeger
@@ -65,12 +66,12 @@ imports:
   - thrift-gen/zipkincore
   - utils
 - name: github.com/uber/jaeger-lib
-  version: 7f95f4f7e80028096410abddaae2556e4c61b59f
+  version: ed3a127ec5fef7ae9ea95b01b542c47fbd999ce5
   subpackages:
   - metrics
   - metrics/prometheus
 - name: github.com/zalando/skipper
-  version: 7da9cc59e2ac57a8330ae542bee7036590e32b4b
+  version: 3cb7f80cc922e052c16f9f3d7d2f63f2a59f9d0a
   subpackages:
   - tracing
 testImports: []
